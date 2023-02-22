@@ -28,6 +28,6 @@ jobs:
         key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
         restore-keys: ${{ runner.os }}-m2
     - name: Build with Maven
-      run: mvn -V --batch-mode help:effective-settings help:active-profiles -Dorg.slf4j.simpleLogger.showDateTime=true -Dorg.slf4j.simpleLogger.log.org.eclipse.aether=trace -Dorg.slf4j.simpleLogger.showThreadName=true
+      run: mvn -V --batch-mode help:effective-settings help:active-profiles --settings maven/lock-on-file-settings.xml -Dorg.slf4j.simpleLogger.showDateTime=true -Dorg.slf4j.simpleLogger.log.org.eclipse.aether=trace -Dorg.slf4j.simpleLogger.showThreadName=true
 
 

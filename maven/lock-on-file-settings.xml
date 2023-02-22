@@ -6,9 +6,9 @@
   <profiles>
     <profile>
       <id>testing-lock</id>
-      <activation>
-        <activeByDefault>true</activeByDefault>
-      </activation>
+      <!-- <activation> -->
+      <!-- <activeByDefault>true</activeByDefault> -->
+      <!-- </activation> -->
       <properties>
         <!-- needed for a shared local repo -->
         <aether.syncContext.named.factory>file-lock</aether.syncContext.named.factory>
@@ -16,4 +16,7 @@
       </properties>
     </profile>
   </profiles>
+  <activeProfiles>
+    <activeProfile>testing-lock</activeProfile>
+  </activeProfiles>
 </settings>

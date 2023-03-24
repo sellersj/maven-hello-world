@@ -29,7 +29,7 @@
         <!-- minimum version to allow for different parent deploys -->
         <plugin>
           <artifactId>maven-deploy-plugin</artifactId>
-          <version>3.1.0</version>
+          <version>3.1.1</version>
         </plugin>
       </plugins>
     </pluginManagement>
